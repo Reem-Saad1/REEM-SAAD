@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app=Flask(__name__)
 
 
 @app.route('/')#الصفحه الرئيسية 
 def hello_world():
-  return 'Hello, Reem!'
+  return render_template("home.html")
 #first class applecktion 
 
 if __name__=='__main__':
